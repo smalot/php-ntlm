@@ -78,9 +78,9 @@ For more, see http://siphon9.net/loune/2010/12/php-ntlm-integration-with-samba/
 Errors
 ======
 
-In case of "NTLMv2 response required. Please force your client to use NTLMv2." error, you have to authorize your browser to negotiate with NTLMv2 by setting "LMCompatibilityLevel" to 0 (dword: 0x00000000).
+In case of "NTLMv2 response required. Please force your client to use NTLMv2." error, you have to authorize your browser to negotiate with NTLMv2 by removing "LMCompatibilityLevel" entry.
 
-Open "regedit" and change/delete the following entry :
+Open "regedit" and delete the following entry:
 
 ````
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LMCompatibilityLevel
